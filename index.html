@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+
+  <!-- NavBar -->
+
+  <ul id="slide-out" style="z-index:999" class="side-nav">
+    <li>
+      <div class="user-view">
+        <a href="#"><img class="circle" src="images/wappen2014.png"></a>
+        <a href="#"><span class="white-text name">Burschenschaft Ripuaria zu Valparaiso</span></a>
+      </div>
+    </li>
+    <li class="divider"></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#heim"><i class="material-icons right white-text">home</i>Heim</a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#uberuns"><i class="material-icons right white-text">people_outline</i>Über Uns </a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#sp"><i class="material-icons right white-text">event_note</i>Semesterprogramm</a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#bewerber"><i class="material-icons right white-text">group_add</i>Bewerber</a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#geschichte"><i class="material-icons right white-text">import_contacts</i>Geschichte </a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#aktivitas"><i class="material-icons right white-text">account_circle</i>Aktivitas</a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="#"><i class="material-icons right white-text">desktop_mac</i>Ripuariapp</a></li>
+    <li><a class="waves-effect" style="color: #eceff1;" href="https://www.facebook.com/burschenschaft.ripuaria/"><i class="material-icons right white-text">devices</i>Facebook</a></li>
+
+  </ul>
+    <a style="position: fixed; z-index: 998" data-activates="slide-out" class="btn-large red button-collapse"><i class="material-icons">menu</i></a>
+
+</header>
+
+<body>
+
+  <div style="position:relative;">
+      <img id="portada" src="images/casa/casafrontis.jpg">
+      <div class="text-block">
+        <h2 id="backgroundTitle">Burschenschaft Ripuaria zu Valparaíso</h4>
+        <h5 id="backgroundSubTitle"><span style="color:black">Zucht</span> - Arbeit - <span style="color:red">Freude</span></p>
+      </div>
+      <a id="backgroundButton" class="waves-effect waves-light btn-large black modal-trigger" href="#modal1">¿Como Postular?</a>
+  </div>
+
+  <!-- Heim -->
+  <div class="container">
+    <div id="heim" class="section">
+      <h1>Heim</h1>
+
+      <div class="col s12">
+        <div class="card red lighten-1">
+          <div id="text-container" class="card-content white-text">
+            <span id="heim-title" class="card-title" style="display: inline">Nuestro Hogar </span> <a  onclick="changeLanguage()" class="waves-effect waves-light btn white" style="color:#ef5350; float: right; display: inline">DE - ES</a>
+
+            <p id="espanol">Nuestra fraternidad se encuentra ubicada en el centro de Viña del Mar, en un sector muy tranquilo de esta bella ciudad costera. Durante todo el día y prácticamente toda la noche
+            existe muy buena locomoción y se encuentra a sólo 20 minutos de las universidades tradicionales. En las cercanías de la casa se encuentran todas las instalaciones útiles, como por ejemplo, clínica,
+            farmacias, supermercados, etc. Contamos con 12 cómodas habitaciones, todas con conexión a Internet. También contamos con una sala de estudio bastante grande, un living con TV,
+            una sala de festejos, un renovado y gran baño, un Kabuf, donde se puede jugar Skat y otros juegos. En nuestra casa tenemos un gran patio para disfrutar del sol, al igual que una mesa de tenis de mesa,
+            una lavadora y una cocina grande, en la cual una cocinera prepara comida bien balanceada para nosotros. </p>
+
+            <p id="deutsch">Unser Heim liegt im Zentrum von Viña del Mar, an einem ruhigen Ort in dieser schönen Küsten- und Sommerstadt. Es gibt während der 24 Stunden am Tag sehr gute Verkehrsverbindungen,
+								 und es befindet sich nur 20 Minuten von den Universitäten entfernt. Und es gibt alle wichtigen Einrichtungen, wie Krankenhaus, Apotheke, Supermarkt, usw., in der Nähe
+								 des Hauses. Wir verfügen über 12 gemütliche Schlafzimmer, alle mit Internet, ein großes Studierzimmer, ein Wohnzimmer mit Kabel TV, einen Kneipsaal, eine
+								 renovierte und grosse Toilette, ein Kabuf wo wir Skat und andere Spiele spielen, einen Garten mit Spießbratenplatz und Tischtennis Tisch, eine Waschmaschine und eine
+								 grosse Küche, in der ein Koch hauptberuflich zwei mal am Tage ein ausgewogenes Mahl für uns zubereitet.</p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="images/casa/casa1.jpg">
+          <div class="caption right-align">
+            <h3>Wohnzimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa2.jpg">
+          <div class="caption right-align">
+            <h3>Wohnzimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa3.jpg">
+          <div class="caption right-align">
+            <h3>Wohnzimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa4.jpg">
+          <div class="caption right-align">
+            <h3>Esszimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa5.jpg">
+          <div class="caption right-align">
+            <h3>Esszimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa6.jpg">
+          <div class="caption right-align">
+            <h3>Esszimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa7.jpg">
+          <div class="caption right-align">
+            <h3>Eingang</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa8.jpg">
+          <div class="caption right-align">
+            <h3>Badezimmer</h3>
+          </div>
+        </li>
+        <li>
+          <img src="images/casa/casa9.jpg">
+          <div class="caption right-align">
+            <h3>Terrasse</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Über Uns -->
+
+    <div class="divider"></div>
+    <div class="container">
+    <div id="uberuns" class="section">
+      <h1>Über Uns</h1>
+        <ul class="collapsible popout" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Was ist die Burschenschaft Ripuaria?</div>
+          <div class="collapsible-body"><span>Die Burschenschaft Ripuaria ist eine Studentenverbindung, deren Mitglieder alle aus verschiedenen Städten Chiles kommen, um in Viña del Mar und Valparaíso zu studieren. Die Burschenschaft wird zu einem zweiten Heim in dem die Studenten, nun fern vom eigenen zu Hause und auf sich selbst gestellt, unserem Wahlspruch „Zucht, Arbeit, Freude“ gemäß, neues lernen und alte Werte pflegen, wie Beziehung mit Anderen machen, Freundschaften bilden, Verantwortungen übernehmen, und weiter die deutsche Kultur und Sprache pflegen. Die Mitglieder verpflichten sich der Burschenschaft als Bund für das ganze Leben anzugehören.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Welche sind unsere Ziele?</div>
+          <div class="collapsible-body"><span>Unsere wichtigsten Ziele sind die deutsche Kultur und Sprache zu pflegen. Zweitens soll jedes Mitglied die Gelegenheit haben,
+            persönliche Verantwortungen in der Gemeindschaft zu übernehmen und die Freundschaft zwischen den Mitgliedern zu fördern. Wir legen höchste Wichtigkeit auf das
+            Pflichtbewußtsein im Studium an der Universität und darin gute Ergebnisse zu erzielen.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Unsere Mitglieder und wie das Leben in der Burschenschaft Ripuaria läuft:</div>
+          <div class="collapsible-body"><span>Die Mitglieder unserer Verbindung - Fuchsen, Burschen und Alte Herren - sind für das ganze Leben mit der Burschenschaft Ripuaria verbunden. Die Fuchsen sind die neuen Mitglieder und haben kleine Ämter und Veranwortungen. Nach einer Zeit kann man Bursch werden, und als solcher mehrere Verantwortungen zugeteilt bekommen und bestimmte Rechte ausführen. Die Burschen sind verantwortlich für die Führung der Verbindung und des Hauses. Wenn ein Bursch sein Studium beendet, wird er zum Alten Herrn ernannt. Die Alten Herren sind die passiven Mitglieder der Verbindung und stehen den Burschen mit Rat und Tat bei Seite.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Welche Aktivitäten unternehmen wir?</div>
+          <div class="collapsible-body"><span>Wir führen verschiedene kulturelle und auch lustige Veranstaltungen im Heim durch, und nehmen an Treffen, Tätigkeiten und Festlichkeiten anderer deutsch chilenischer Institutionen Teil.
+             Wir üben viel Sport und andere Entspannungen aus, wie die zubereitung von Spiessbraten und Skatspielen. Alle diese Aktivitäten stehen immer im Einklang und gehen mit einer zum Studium
+             anhaltenden Atmosphäre im Heim daher.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Wer kann Mitglied sein?</div>
+          <div class="collapsible-body"><span>Mitglied kann jeder Student sein, der ein mindestens 8 Semester langes akademisches Studium betreibt. Er muß auch die deutsche Sprache gut kennen und beherrschen und aktives
+             Interesse an dieser Sprache und Kultur besitzen und zeigen. Um Mitglied zu sein muß man nicht unbedingt im Heim wohnen.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header collapsible-popout"><i class="material-icons">priority_high</i>Was muss man unternehmen um in die Verbindung einzutreten?</div>
+          <div class="collapsible-body"><span>Man sollte sich zuerst persönlich, oder per E-Mail oder Telefon, mit uns in Verbindung setzen. Danach muss man einen Vorstellungsbrief mit Aufnahmegesuch auf deutsch an uns richten.</span></div>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+
+
+
+  <!--Semesterprogramm-->
+  <div class="divider"></div>
+  <div class="container">
+    <div id="sp" class="section">
+      <h1>Semesterprogramm</h1>
+      <div class="responsiveCal">
+        <iframe src="https://calendar.google.com/calendar/embed?src=sansano.usm.cl_q2ogoersll3gk54cub9dl13ugk%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="row">
+        <div style="padding-top: 1%" class="col s12 l9 offset-l4">
+          <a href="#" class="waves-effect waves-light btn black">Semesterprogramm herunterladen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bewerber -->
+  <div class="divider"></div>
+  <div class="container">
+    <div id="bewerber" class="section">
+      <h1>Bewerber</h1>
+
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 1</div>
+            <div class="collapsible-body"><span>Si quieres estudiar este año una carrera universitaria en Viña del Mar o Valparaíso te invitamos a que conozcas el Centro Estudiantil Universitario
+               Burschenschaft Ripuaria ubicado en el centro de Viña del Mar. Somos una fraternidad fundada en 1949 que ofrece un hogar para estudiantes universitarios
+                de todo Chile, enfocados en la cultura alemana y el trabajo en equipo.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 2</div>
+            <div class="collapsible-body"><span>La Burschenschaft Ripuaria , es más que una pensión, exige un compromiso mayor. Primero puedes optar a ser miembro postulante (Fuchs) y vivir
+               con nosotros: Así recibirás una pieza con todas las comodidades, Internet, dos comidas al día, y una lavandería totalmente equipada.
+               Además, contamos con personal de servicio que nos apoya en mantener el orden y aseo en el hogar.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 3</div>
+            <div class="collapsible-body"><span>Contamos con cómodas piezas, amplios baños, una sala de estudio y espacios comunes, los cuales le dan un ambiente muy hogareño a
+               nuestra casa ubicada en la Calle Quito #272 de Viña del mar. Los alumnos de cursos superiores siempre están dispuestos a ayudar a
+               los de Primer Año en sus respectivas carreras. Esta gran ayuda dentro de la Burschenschaft, es parte de nuestros objetivos:
+               Fomentar el estudio y ambiente universitario tanto para los nuevos como para los antiguos miembros. Además al vivir con otras personas,
+               puedes aprender a apreciar otros puntos de vista, aprendiendo a comprender mejor a los demás, y de esta forma saber respetarlos.
+                De esta forma logramos aprender lo más importante, tanto a nivel personal como laboral, aprender a trabajar en equipo.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 4</div>
+            <div class="collapsible-body"><span>Te invitamos a incorporarte a la Burschenschaft Ripuaria si quieres estudiar alguna Carrera en la Universidad que tú desees
+              (Universidad Técnica Federico Santa María, Pontificia Universidad Católica de Valparaíso, Universidad Adolfo Ibáñez, Universidad
+              de Valparaíso, Universidad de Playa Ancha, entre otras.)</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 5</div>
+            <div class="collapsible-body"><span>Es importante destacar que el costo de vivir con nosotros es considerablemente menor, en comparación a pensiones similares en
+              Viña del Mar o Valparaíso.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header collapsible-popout"><i class="material-icons">local_hotel</i>Info 6</div>
+            <div class="collapsible-body"><span>Para postular debes enviarnos una carta a nuestro Email, en la cual nos cuentes por qué elegiste Valparaíso/Viña del Mar como tu ciudad de estudios,
+               cuales son tus intereses y qué es lo que te atrae de la cultura alemana. De esta forma sabremos más de ti y podrás incorporarte de mejor forma a nuestra
+               comunidad. No olvides que es requisito obligatorio estar inscrito en una carrera universitaria de al menos ocho semestres.</span></div>
+          </li>
+        </ul>
+        <!-- Modal Trigger -->
+
+        <a class="waves-effect waves-light btn black modal-trigger" style="font-size:180%" href="#modal1">Postula! <i class="material-icons">send</i></a>
+        <a class="waves-effect waves-light btn" style="background-color: #3b5998; float: right" href="https://m.me/burschenschaft.ripuaria/">Mándanos un mensaje a facebook</a>
+
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Postula</h4>
+            <ul>
+              <li>Escribenos a <span style="color:red;">info.ripuaria@gmail.com</span></li>
+              <li>Llamanos al <span style="color:red;"> +56 32 266 2091</span></li>
+              <a class="waves-effect waves-light btn" style="background-color: #3b5998" href="https://m.me/burschenschaft.ripuaria/">Mándanos un mensaje a facebook</a>
+
+            </ul>
+            <br>
+            <div class="row">
+
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.3441195649702!2d-71.56029838892196!3d-33.027450136245264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de086f86f369%3A0x98923270fecf39aa!2sQuito+272%2C+Vi%C3%B1a+del+Mar%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1sen!2scl!4v1515025761011" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn black left">Cerrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Geschichte -->
+  <div class="divider"></div>
+  <div class="container">
+    <div id="geschichte" class="section">
+      <h1>Geschichte</h1>
+    </div>
+
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <time>1949</time> <br> Die Burschenschaft Ripuaria wurde am 30. Juni in der erste Hauptversammlung gegründet.
+            <!-- Modal Trigger -->
+            <br>
+            <a class="waves-effect waves-light btn black modal-trigger" href="#modal2">Gründungsakt</a>
+
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1950</time> <br> Am September nahm man die ersten zwei Füchse in die Verbindung auf. <br>Manfred Busch und Arno Müller.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1951</time> <br> Die Grundbestimmungen, Satzungen und Bierkomment der Burschenschaft Ripuaria wurden endgültig beendet.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1953</time> <br> Am anfang des Jahres bekam die Burschenschaft ein Raum im Keller des Deutschen Vereins; der dann in gemeisamer arbeit aller Mitglieder
+            zu dem Versammlungssaal umgebaut wurde. <br> Der erste Ehrenmitglied wurde ernannt.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1954</time> <br> Am 17. November erlag, nach einem Flugzeugunglück Bbr. Rudolph Heldt dem Tode. Wir gedenken jedes Jahr mit einem Trauerkommers allen
+            verstorbenen Mitgliedern.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1961</time> <br> Die Burschenschaft Ripuaria mietete ihr erstes Haus in Paseo Goñi 45 und wurde mit einer Hauptversammlung plus Damen eingeweiht.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1978</time> <br> Das heutige Haus in Quito 272 wurde gekauft.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>1985</time> <br> Am 3. März lieβ das Erdbeben das Haus in einem jämmerlichen Zustand. Nach Jahre arbeit und Ausbesserungen konnte ein verbessertes und moder-ausgestattetes
+            Heim den Aktivitas zür Verfügung gestellt werden.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2015</time> <br> Am Juni wurde die erste Kreuzhauptversammlung mit der Burschenschaft Andinia stattgefunden.
+          </div>
+        </li>
+      </ul>
+
+
+      <!-- Modal Structure -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4 style="text-align:center">Gründungsakt</h4>
+          <p style="text-align: justify">Unterzeichnete Gründen eine studentische Verbindung mit dem Namen "BURSCHENSCHAFT GAUDEAMUS".
+Die Burschenschaft Gaudeamus verfolgt das Ziel, deutsches Kulturgut, Sitte und Tradition in gemeinschaftlicher Arbeit ihrer Mitglieder zu pflegen.
+ Sie macht es sich zur Aufgabe, durch ihre Tätigkeit anregend in der deutschen Gemeinschaft in Valparaíso zu wirken.</p>
+        <p style="text-align:justify">Aktive Mitglieder können die Studenten der örtlichen Universitäten, die eine dem Bachillerato entsprechende Reifeprüfung abgelegt haben, werden. Ebenso bis zu einem Fünftel Nichtstudierende mit dieser Prüfung.
+Das akademische Jahr läuft vom 1. April bis zum 30. Juni und vom 1. August bis zum 15. November.</p>
+          <p style="text-align:justify">Das Direktorium übernimmt es, die Grundbestimmungen und Satzungen auszuarbeiten.</p>
+          <p style="text-align:center; color:red">Valparaíso, am 30. Juni 1949</p>
+        <div class="modal-footer">
+          <a class="modal-action modal-close waves-effect waves-green btn black left">Schlieβen</a>
+        </div>
+      </div>
+    </div>
+
+
+    </section>
+    <br>
+    <a style="left: 43%"class="waves-effect waves-light btn black modal-trigger" href="#modal3">Wichtige Leute</a>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h4 style="text-align:center">Wichtige Leute</h4>
+        <h5> Ehrenmitglieder</h6>
+          <ul class="collection">
+            <li class="collection-item red lighten-1" style="color:white">Gerd Friederichs <span style="float: right; font-style: italic;">Rako</span></li>
+            <li class="collection-item red lighten-1" style="color:white">Wolfgang Jacob Schmidt-Hebbel<span style="float: right; font-style: italic;">Zwerg</span></li>
+            <li class="collection-item red lighten-1" style="color:white">Rolf Busch <span style="float: right; font-style: italic;">Puma</span></li>
+            <li class="collection-item red lighten-1" style="color:white">Helmut Hiller <span style="float: right; font-style: italic;">Speroni</span></li>
+            <li class="collection-item red lighten-1" style="color:white">Kurt Finster <span style="float: right; font-style: italic;">Curtl</span></li>
+            <li class="collection-item red lighten-1" style="color:white">Fritz Hans Marquardt <span style="float: right; font-style: italic;">Papaya</span></li>
+          </ul>
+        <h5> Ehrengäste </h6>
+        <ul class="collection">
+          <li class="collection-item amber" style="color:white">Artur Junge</li>
+          <li class="collection-item amber" style="color:white">Bruno Weiler</li>
+          <li class="collection-item amber" style="color:white">Kurt Goldmann</li>
+          <li class="collection-item amber" style="color:white">Harald Möller</li>
+          <li class="collection-item amber" style="color:white">Horst Schüttrumpf</li>
+        </ul>
+        <h5> 1° Vorstand </h6>
+          <ul class="collection">
+            <li class="collection-item light-blue darken-1" style="color:white">Harro Friederichs <span style="float: right; font-style: italic;">Laktus</span></li>
+            <li class="collection-item light-blue darken-1" style="color:white">Max Von Brand <span style="float: right; font-style: italic;">Methusalem</span></li>
+            <li class="collection-item light-blue darken-1" style="color:white">Helmut Hiller <span style="float: right; font-style: italic;">Speroni</span></li>
+            <li class="collection-item light-blue darken-1" style="color:white">Gerd Friederichs <span style="float: right; font-style: italic;">Rako</span></li>
+          </ul>
+          <h5> Hauskaufskommission </h6>
+            <ul class="collection">
+              <li class="collection-item deep-purple lighten-3" style="color:white">Pedro Roth <span style="float: right; font-style: italic;">Hanko</span></li>
+              <li class="collection-item deep-purple lighten-3" style="color:white">Gerd Reinke <span style="float: right; font-style: italic;">Kaprikornius</span></li>
+              <li class="collection-item deep-purple lighten-3" style="color:white">Günther Hoppe <span style="float: right; font-style: italic;">Pacharini</span></li>
+              <li class="collection-item deep-purple lighten-3" style="color:white">Carlos Winkler <span style="float: right; font-style: italic;">Tüte</span></li>
+            </ul>
+      <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn black left">Schlieβen</a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- Aktivitas -->
+  <div class="divider"></div>
+  <div class="container">
+    <div id="aktivitas" class="section">
+      <h1>Aktivitas</h1>
+      <!-- Vorstand -->
+      <div class="row">
+      <h3 style="text-align: center"> Vorstand </h3>
+      <div class="divider"></div>
+      <div class="container-img">
+        <img src="images/aktivitas/moller.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">1° Sprecher </br> Martin Moller </br> UAI: Psychologie</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/rothkegel.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">2° Sprecher </br> Juan Pablo Rothkegel </br> USM: Elektrotechnik</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/gomez.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Schriftwart </br> Felipe Gomez </br> USM: Wirtschafts-</br>ingenieurwesen</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/contrerasv.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Kassenwart </br> Vicente Contreras </br> USM: Chemie</div>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- Burschen -->
+      <div class="row">
+      <h3 style="text-align: center">Burschen</h3>
+      <div class="divider"></div>
+      <div class="container-img">
+        <img src="images/aktivitas/vilicic.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Davor Vilicic </br> USM: Elektrotechnik</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/contrerasn.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Nicolas Contreras </br> USM: Wirtschafts-</br>ingenieurwesen</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/solmi.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Nicolas De Solminihac </br> EMM: Musik Komposition</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/kampers.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Rodrigo Kampers </br> UAI: Wirtschafts-</br>ingenieurwesen</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="container-img">
+        <img src="images/aktivitas/mohr.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Esteban Mohr </br> USM: Elektrotechnik</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/volke.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Fernando Volke </br> USM: Maschinenbau</div>
+        </div>
+      </div>
+
+    </div>
+
+
+      <!-- Füchse -->
+      <div class="row">
+      <h3 style="text-align: center">Füchse</h3>
+      <div class="divider"></div>
+      <div class="container-img">
+        <img src="images/aktivitas/robbins.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Tomas Robbins </br> UAI: Ingenieurwesen</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/ascui.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Benjamin Ascui </br> PUCV: Architektur</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/novoa.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Alejandro Novoa </br> UAI: Ingenieurwesen</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/herrera.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Sebastian Herrera </br> UAI: Ingenieurwesen</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container-img">
+        <img src="images/aktivitas/hartmann.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Rudolf Hartmann </br> USM: Telekommunikations-</br>wissenschaft</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/rolf.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Rolf Moller-Holtkamp </br> UAI: Ingenieurwesen</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/salas.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Cristobal Salas </br> UAI: Journalismus</div>
+        </div>
+      </div>
+
+      <div class="container-img">
+        <img src="images/aktivitas/diaz.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">Sebastian Diaz </br> UV: Pharmazeutisch-</br>Chemie</div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Burschenschaft Ripuaria
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>
